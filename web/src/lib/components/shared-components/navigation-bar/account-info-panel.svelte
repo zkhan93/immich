@@ -35,7 +35,7 @@
 			{#await getUserProfileImage() then}
 				<img
 					transition:fade={{ duration: 100 }}
-					src={`${$page.url.origin}/api/user/profile-image/${user.id}`}
+					src={`/api/user/profile-image/${user.id}`}
 					alt="profile-img"
 					class="inline rounded-full h-20 w-20 object-cover shadow-md"
 				/>
